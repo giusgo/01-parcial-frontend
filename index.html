@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your dream job today with our job portal. Connecting talent with opportunity for career success."
+    />
+    <meta
+      name="keywords"
+      content="job portal, job search, careers, employment"
+    />
+    <meta name="author" content="Giuseppe Gomez, Miguel Garcia & Juan Vargas" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <title>Home - Job Portal</title>
+  </head>
+  <body>
+    <div class="hero">
+      <header>
+        <div class="logo" role="banner">
+          <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
+          <p>Job Portal</p>
+        </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="./index.html" class="selected">Home</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button class="login-btn" aria-label="Login to your account">
+            Login
+          </button>
+          <button class="register-btn" aria-label="Create a new account">
+            Register
+          </button>
+        </div>
+      </header>
+
+      <div class="job_forms" role="form" aria-labelledby="job-search-title">
+        <h1 id="job-search-title">Find Your Dream Job Today!</h1>
+        <p>
+          Connecting Talent with Opportunity: Your Gateway to Career Success
+        </p>
+        <form class="form" action="/submit" method="POST" novalidate>
+          <label for="job_company">Job Title or Company</label>
+          <input
+            type="text"
+            id="job_company"
+            name="job_company"
+            required
+            aria-required="true"
+            placeholder="Job Title or Company"
+          />
+
+          <label for="location">Location</label>
+          <select name="location" id="location" required aria-required="true">
+            <option value="" selected disabled>Select location</option>
+            <!-- Add location options here -->
+          </select>
+
+          <label for="category">Category</label>
+          <select name="category" id="category" required aria-required="true">
+            <option value="" selected disabled>Select category</option>
+            <!-- Add category options here -->
+          </select>
+
+          <button type="submit">Search Job</button>
+        </form>
+        <div class="stats" aria-label="Job Statistics">
+          <div class="stat">
+            <div class="icon_bg">
+              <img
+                class="icon"
+                src="./assets/svg/briefcase.svg"
+                alt="Briefcase icon"
+              />
+            </div>
+            <div>
+              <p class="number">25,850</p>
+              <p class="description">Jobs</p>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="icon_bg">
+              <img
+                class="icon"
+                src="./assets/svg/people.svg"
+                alt="Candidates icon"
+              />
+            </div>
+            <div>
+              <p class="number">10,250</p>
+              <p class="description">Candidates</p>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="icon_bg">
+              <img
+                class="icon"
+                src="./assets/svg/buildings.svg"
+                alt="Companies icon"
+              />
+            </div>
+            <div>
+              <p class="number">18,400</p>
+              <p class="description">Companies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logos" aria-label="Partner Companies">
+        <img src="./assets/svg/logos/spotify.svg" alt="Spotify logo" />
+        <img src="./assets/svg/logos/slack.svg" alt="Slack logo" />
+        <img src="./assets/svg/logos/adobe.svg" alt="Adobe logo" />
+        <img src="./assets/svg/logos/asana.svg" alt="Asana logo" />
+        <img src="./assets/svg/logos/linear.svg" alt="Linear logo" />
+      </div>
+    </div>
+  </body>
+</html>
