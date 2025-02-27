@@ -47,85 +47,106 @@
         </div>
       </header>
 
-      <div class="job_forms" role="form" aria-labelledby="job-search-title">
-        <h1 id="job-search-title">Find Your Dream Job Today!</h1>
-        <p>
-          Connecting Talent with Opportunity: Your Gateway to Career Success
-        </p>
-        <form class="form" action="/submit" method="POST" novalidate>
-          <label for="job_company">Job Title or Company</label>
-          <input
-            type="text"
-            id="job_company"
-            name="job_company"
-            required
-            aria-required="true"
-            placeholder="Job Title or Company"
-          />
-
-          <label for="location">Location</label>
-          <select name="location" id="location" required aria-required="true">
-            <option value="" selected disabled>Select location</option>
-            <!-- Add location options here -->
-          </select>
-
-          <label for="category">Category</label>
-          <select name="category" id="category" required aria-required="true">
-            <option value="" selected disabled>Select category</option>
-            <!-- Add category options here -->
-          </select>
-
-          <button type="submit">Search Job</button>
-        </form>
-        <div class="stats" aria-label="Job Statistics">
-          <div class="stat">
-            <div class="icon_bg">
-              <img
-                class="icon"
-                src="./assets/svg/briefcase.svg"
-                alt="Briefcase icon"
+      <div class="jobs" role="form" aria-labelledby="job-search-title">
+        <div class="container">
+          <h1 id="job-search-title">Find Your Dream Job Today!</h1>
+          <p>
+            Connecting Talent with Opportunity: Your Gateway to Career Success
+          </p>
+          <form class="form" action="/submit" method="POST" novalidate>
+            <label for="job_company">Job Title or Company</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="job_company"
+                name="job_company"
+                required
+                aria-required="true"
+                placeholder="Job Title or Company"
               />
             </div>
-            <div>
-              <p class="number">25,850</p>
-              <p class="description">Jobs</p>
+
+            <label for="location">Location</label>
+            <div class="input-wrapper">
+              <select
+                name="location"
+                id="location"
+                required
+                aria-required="true"
+              >
+                <option value="" selected disabled>Select location</option>
+              </select>
             </div>
-          </div>
-          <div class="stat">
-            <div class="icon_bg">
-              <img
-                class="icon"
-                src="./assets/svg/people.svg"
-                alt="Candidates icon"
-              />
+
+            <label for="category">Category</label>
+            <div class="input-wrapper">
+              <select
+                name="category"
+                id="category"
+                required
+                aria-required="true"
+              >
+                <option value="" selected disabled>Select category</option>
+              </select>
             </div>
-            <div>
-              <p class="number">10,250</p>
-              <p class="description">Candidates</p>
+
+            <div class="form-btn" aria-label="Search Job">
+              <img src="./assets/svg/search.svg" alt="" />
+              <p>Search Job</p>
             </div>
-          </div>
-          <div class="stat">
-            <div class="icon_bg">
-              <img
-                class="icon"
-                src="./assets/svg/buildings.svg"
-                alt="Companies icon"
-              />
+          </form>
+          <div class="stats" aria-label="Job Statistics">
+            <div class="stat">
+              <div class="icon_bg">
+                <img
+                  class="icon"
+                  src="./assets/svg/briefcase.svg"
+                  alt="Briefcase icon"
+                />
+              </div>
+              <div>
+                <p class="number">25,850</p>
+                <p class="description">Jobs</p>
+              </div>
             </div>
-            <div>
-              <p class="number">18,400</p>
-              <p class="description">Companies</p>
+            <div class="stat">
+              <div class="icon_bg">
+                <img
+                  class="icon"
+                  src="./assets/svg/people.svg"
+                  alt="Candidates icon"
+                />
+              </div>
+              <div>
+                <p class="number">10,250</p>
+                <p class="description">Candidates</p>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="icon_bg">
+                <img
+                  class="icon"
+                  src="./assets/svg/buildings.svg"
+                  alt="Companies icon"
+                />
+              </div>
+              <div>
+                <p class="number">18,400</p>
+                <p class="description">Companies</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="logos" aria-label="Partner Companies">
-        <img src="./assets/svg/logos/spotify.svg" alt="Spotify logo" />
-        <img src="./assets/svg/logos/slack.svg" alt="Slack logo" />
-        <img src="./assets/svg/logos/adobe.svg" alt="Adobe logo" />
-        <img src="./assets/svg/logos/asana.svg" alt="Asana logo" />
-        <img src="./assets/svg/logos/linear.svg" alt="Linear logo" />
+        <div class="container">
+          <img src="./assets/svg/logos/spotify.svg" alt="Spotify logo" />
+          <img src="./assets/svg/logos/slack.svg" alt="Slack logo" />
+          <img src="./assets/svg/logos/adobe.svg" alt="Adobe logo" />
+          <img src="./assets/svg/logos/asana.svg" alt="Asana logo" />
+          <img src="./assets/svg/logos/linear.svg" alt="Linear logo" />
+        </div>
       </div>
     </div>
   </body>
