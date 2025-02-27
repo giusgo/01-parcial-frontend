@@ -215,7 +215,7 @@ footer .info {
 footer .info .copyright {
   color: white;
   font-size: 14px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 footer .info .links a {
@@ -239,5 +239,25 @@ footer .info .links a {
 
   header nav {
     display: none;
+  }
+
+  footer .relevant {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  footer .relevant .description .logo {
+    justify-content: center;
+  }
+
+  footer .info {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer .info .links a {
+    margin: 10px;
   }
 }
