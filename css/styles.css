@@ -25,6 +25,10 @@ header .logo {
   gap: 10px;
 }
 
+header .logo .mobile {
+  display: none;
+}
+
 header .logo img {
   width: 28px;
 }
@@ -88,4 +92,23 @@ header .register-btn {
 
 header .register-btn:hover {
   background-color: #1b5850;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  header {
+    max-width: 90%;
+  }
+
+  header .logo .desktop {
+    display: none;
+  }
+
+  header .logo .mobile {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
 }
