@@ -23,6 +23,7 @@ header .logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 header .logo .mobile {
@@ -269,6 +270,10 @@ footer .info .links a {
     flex-direction: column-reverse;
     align-items: center;
     gap: 10px;
+  }
+
+  footer .info .copyright {
+    text-align: center;
   }
 
   footer .info .links a {

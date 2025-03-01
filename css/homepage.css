@@ -361,6 +361,8 @@ section.categories .cards .card .content .category-name {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 section.categories .cards .card .content .category-jobs-count {
