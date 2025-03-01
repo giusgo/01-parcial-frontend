@@ -287,11 +287,88 @@ section.jobs .jobs-list .job .details-2 .job-details-btn {
   padding: 14px 20px;
   cursor: pointer;
   font-family: "Figtree", serif;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 section.jobs .jobs-list .job .details-2 .job-details-btn:hover {
   background-color: #1b5850;
+}
+
+section.categories {
+  width: 100%;
+  background-color: rgba(48, 150, 137, 0.1);
+  padding: 60px 0;
+}
+
+section.categories .container {
+  max-width: 80%;
+  margin: auto;
+}
+
+section.categories h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.categories .container > p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.categories .cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+section.categories .cards .card {
+  background-color: white;
+  padding-top: 100%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(48, 150, 137, 0.05);
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+section.categories .cards .card:hover {
+  transform: translateY(-10px);
+  filter: brightness(0.9);
+}
+
+section.categories .cards .card .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+section.categories .cards .card .content svg {
+  width: 60px;
+  height: 60px;
+  color: #309689;
+}
+
+section.categories .cards .card .content .category-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section.categories .cards .card .content .category-jobs-count {
+  text-align: center;
+  padding: 5px 12px;
+  background-color: rgba(48, 150, 137, 0.1);
+  color: #309689;
+  border-radius: 8px;
 }
 
 /* Responsive design */
@@ -410,5 +487,25 @@ section.jobs .jobs-list .job .details-2 .job-details-btn:hover {
 
   section.jobs .jobs-list .job .details-2 .job-details-btn {
     width: 100%;
+  }
+
+  section.categories h2 {
+    font-size: 28px;
+  }
+
+  section.categories .container {
+    max-width: 90%;
+  }
+
+  section.categories .cards {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+
+  section.categories .cards .card .content {
+    gap: 8vw;
   }
 }
