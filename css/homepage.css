@@ -436,7 +436,7 @@ section.info-block .search .ad .btns .search-btn {
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
   font-family: "Figtree", serif;
 }
 
@@ -616,5 +616,69 @@ section.info-block .stats .stat .description {
 
   section.categories .cards .card .content {
     gap: 8vw;
+  }
+
+  section.info-block {
+    padding: 40px 0;
+  }
+
+  section.info-block .container {
+    max-width: 90%;
+  }
+
+  section.info-block .search {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section.info-block .search .bg-img-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+  }
+
+  section.info-block .search .bg-img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  section.info-block .search .ad h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  section.info-block .search .ad p {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  section.info-block .search .ad .btns {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  section.info-block .search .ad .btns .search-btn {
+    width: 100%;
+  }
+
+  section.info-block .search .ad .btns .learn-more-link {
+    display: none;
+  }
+
+  section.info-block .stats {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  section.info-block .stats .stat {
+    text-align: center;
+    gap: 10px;
+  }
+
+  section.info-block .stats .stat .number {
+    font-size: 60px;
   }
 }
