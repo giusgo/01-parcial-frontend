@@ -17,3 +17,26 @@
   font-size: 60px;
   text-align: center;
 }
+
+.hero .title .mobile {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .hero {
+    height: 280px;
+  }
+
+  .hero .title h1 {
+    font-size: 32px;
+  }
+
+  .hero .title .mobile {
+    display: block;
+  }
+
+  .hero .title .desktop {
+    display: none;
+  }
+}

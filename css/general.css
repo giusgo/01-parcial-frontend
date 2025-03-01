@@ -30,7 +30,7 @@ header .logo .mobile {
 }
 
 header .logo img {
-  width: 28px;
+  height: 28px;
 }
 
 header .logo p {
@@ -138,6 +138,7 @@ footer .relevant .description > p {
   color: white;
   font-size: 20px;
   opacity: 0.8;
+  line-height: 32px;
 }
 
 footer .relevant .company,
