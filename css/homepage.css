@@ -202,6 +202,9 @@ section.jobs .jobs-list {
   flex-basis: 100%;
   width: 100%;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 section.jobs .jobs-list .job {
