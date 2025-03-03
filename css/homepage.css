@@ -638,6 +638,100 @@ section.testimonials .testimonials-slider .testimonial .review-author .author-ro
   margin-top: 7px;
 }  
 
+section.blog {
+  width: 100%;
+  padding: 60px 0;
+}
+
+section.blog .container {
+  margin: auto;
+  max-width: 80%;
+}
+
+section.blog h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+section.blog .wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.blog .description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section.blog .view-all-link {
+  font-size: 24px;
+  color: #309689;
+  font-weight: 600;
+}
+
+section.blog .posts {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+section.blog .posts .post .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #888d92;
+}
+
+section.blog .posts .post .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+}
+
+section.blog .posts .post .tag {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background-color: #309689;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+section.blog .posts .post .content .date {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8B8B8B;
+}
+
+section.blog .posts .post .content .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+section.blog .posts .post .content .read-more-link {
+  font-size: 16px;
+  color: #309689;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .hero {
@@ -886,5 +980,30 @@ section.testimonials .testimonials-slider .testimonial .review-author .author-ro
 
   section.testimonials .testimonials-slider .testimonial {
     min-width: 416px;
+  }
+
+  section.blog {
+    padding: 40px 0;
+  }
+
+  section.blog h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  section.blog .wrapper .description {
+    text-align: center;
+  }
+
+  section.blog .wrapper .view-all-link {
+    display: none;
+  }
+
+  section.blog .posts {
+    overflow-x: auto;
+  }
+
+  section.blog .posts .post {
+    min-width: 333px;
   }
 }
