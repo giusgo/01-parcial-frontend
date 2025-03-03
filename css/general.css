@@ -145,6 +145,7 @@ footer .relevant .description > p {
   font-size: 20px;
   opacity: 0.8;
   line-height: 32px;
+  max-width: 400px;
 }
 
 footer .relevant .company,
@@ -264,6 +265,10 @@ footer .info .links a {
 
   footer .relevant .description .logo {
     justify-content: center;
+  }
+
+  footer .relevant .description > p {
+    max-width: none;
   }
 
   footer .info {
