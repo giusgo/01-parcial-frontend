@@ -540,6 +540,104 @@ section.banner .card .img-wrapper img {
   filter: blur(20px);
 }
 
+section.testimonials {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #ebf5f4;
+}
+
+section.testimonials .container {
+  margin: auto;
+  max-width: 80%;
+}
+
+section.testimonials h2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.testimonials .container > p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.testimonials .testimonials-slider {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+section.testimonials .testimonials-slider .testimonial {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(48, 150, 137, 0.05);
+}
+
+section.testimonials .testimonials-slider .testimonial .stars {
+  display: flex;
+  gap: 10px;
+  color: #ffc107;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-title {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+section.testimonials .testimonials-slider .testimonial .quote-wrapper {
+  margin-top: 20px;
+  text-align: right;
+}
+
+section.testimonials .testimonials-slider .testimonial .icon-tabler-quote {
+  color: #309689;
+  width: 40px;
+  height: 40px;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-author .author-img-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-author img {
+  width: 64px;
+  height: 64px;
+  filter: blur(5px);
+  border-radius: 50%;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-author .author-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section.testimonials .testimonials-slider .testimonial .review-author .author-role {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-top: 7px;
+}  
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .hero {
@@ -772,5 +870,21 @@ section.banner .card .img-wrapper img {
 
   section.banner .card .content button {
     width: 100%;
+  }
+
+  section.testimonials {
+    padding: 40px 0;
+  }
+
+  section.testimonials h2 {
+    font-size: 28px;
+  }
+
+  section.testimonials .testimonials-slider {
+    overflow-x: auto;
+  }
+
+  section.testimonials .testimonials-slider .testimonial {
+    min-width: 416px;
   }
 }
