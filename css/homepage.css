@@ -480,6 +480,66 @@ section.info-block .stats .stat .description {
   line-height: 24px;
 }
 
+section.banner {
+  width: 100%;
+  padding: 60px 0;
+}
+
+section.banner .container {
+  margin: auto;
+  max-width: 80%;
+}
+
+section.banner .card {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  overflow: hidden;
+}
+
+section.banner .card .content h3 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+section.banner .card .content p {
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+}
+
+section.banner .card .content button {
+  margin-top: 60px;
+  color: white;
+  background-color: #309689;
+  border: none;
+  padding: 14px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section.banner .card .content button:hover {
+  background-color: #1b5850;
+}
+
+section.banner .card .img-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+section.banner .card .img-wrapper img {
+  filter: blur(20px);
+}
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .hero {
@@ -680,5 +740,37 @@ section.info-block .stats .stat .description {
 
   section.info-block .stats .stat .number {
     font-size: 60px;
+  }
+
+  section.banner .card {
+    flex-direction: column-reverse;
+    padding: 90px 30px;
+    height: auto;
+  }
+
+  section.banner .card .img-wrapper {
+    width: 100%;
+  }
+
+  section.banner .card .img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section.banner .card .content {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  section.banner .card .content h3 {
+    font-size: 28px;
+  }
+
+  section.banner .card .content p {
+    font-size: 14px;
+  }
+
+  section.banner .card .content button {
+    width: 100%;
   }
 }
