@@ -591,6 +591,71 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
   border: 2px solid transparent;
 }
 
+section.top-companies {
+  background-color: #ebf5f4;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+section.top-companies .container {
+  max-width: 80%;
+  margin: auto;
+}
+
+section.top-companies .container h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.top-companies .container > p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section.top-companies .container .cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+section.top-companies .container .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+section.top-companies .container .cards .card .company-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.top-companies .container .cards .card p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 24px;
+  opacity: 0.8;
+}
+
+section.top-companies .container .cards .card span {
+  margin-top: 30px;
+  font-size: 16px;
+  background-color: rgba(49, 150, 137, 0.1);
+  color: #309689;
+  padding: 5px 16px;
+  border-radius: 12px;
+}
+
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .hero {
@@ -608,7 +673,7 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
   .hero .title .desktop {
     display: none;
   }
-  
+
   section.jobs {
     padding: 40px 0;
   }
@@ -636,7 +701,7 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
     height: 460px;
   }
 
-  section.jobs .container .jobs-list .results-stats p{
+  section.jobs .container .jobs-list .results-stats p {
     font-size: 12px;
   }
 
@@ -689,5 +754,25 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
     padding: 0 10px;
     height: 28px;
     border-radius: 8px;
+  }
+
+  section.top-companies {
+    padding: 40px 0;
+  }
+
+  section.top-companies .container {
+    max-width: 90%;
+  }
+
+  section.top-companies .container h2 {
+    font-size: 28px;
+  }
+
+  section.top-companies .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.top-companies .container .cards .card {
+    height: 360px;
   }
 }
