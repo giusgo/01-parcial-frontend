@@ -412,7 +412,103 @@ section.jobs .container .jobs-list .results-stats select {
   color: #6c757d;
 }
 
+section.jobs .jobs-list .results {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section.jobs .jobs-list .job {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(48, 150, 137, 0.08);
+  padding: 40px;
+}
+
+section.jobs .jobs-list .job .save-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+section.jobs .jobs-list .job .time {
+  user-select: none;
+  background-color: rgba(48, 150, 137, 0.1);
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  color: #309689;
+  font-size: 16px;
+}
+
+section.jobs .jobs-list .job .details {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+section.jobs .jobs-list .job .details .position {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+section.jobs .jobs-list .job .details .location {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+section.jobs .jobs-list .job .details-2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+section.jobs .jobs-list .job .details-2 .more-details {
+  display: flex;
+  gap: 20px;
+}
+
+section.jobs .jobs-list .job .details-2 .more-details .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+section.jobs .jobs-list .job .details-2 .more-details .item svg {
+  color: #309689;
+}
+
+section.jobs .jobs-list .job .details-2 .more-details .item p {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+section.jobs .jobs-list .job .details-2 .job-details-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #309689;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-family: "Figtree", serif;
+  transition: 0.3s ease;
+}
+
+section.jobs .jobs-list .job .details-2 .job-details-btn:hover {
+  background-color: #1b5850;
+}
+
 section.jobs .container .jobs-list .pagination {
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,7 +566,6 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
   color: white;
   border: 2px solid transparent;
 }
-
 
 /* Responsive design */
 @media (max-width: 1200px) {
