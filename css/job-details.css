@@ -18,6 +18,102 @@
   text-align: center;
 }
 
+section.details {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+section.details .container {
+  max-width: 80%;
+  margin: auto;
+}
+
+section.details .job-info {
+  width: 100%;
+  position: relative;
+}
+
+section.details .job-info .save-btn {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+section.details .job-info .time {
+  user-select: none;
+  background-color: rgba(48, 150, 137, 0.1);
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  color: #309689;
+}
+
+section.details .job-info .details {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+section.details .job-info .details .position {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+section.details .job-info .details .location {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+section.details .job-info .details-2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+section.details .job-info .details-2 .more-details {
+  display: flex;
+  gap: 20px;
+}
+
+section.details .job-info .details-2 .more-details .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+section.details .job-info .details-2 .more-details .item svg {
+  color: #309689;
+}
+
+section.details .job-info .details-2 .more-details .item p {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+section.details .job-info .details-2 .apply-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #309689;
+  border: none;
+  border-radius: 8px;
+  width: 314px;
+  padding: 14px 0;
+  cursor: pointer;
+  font-family: "Figtree", serif;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+section.details .job-info .details-2 .apply-btn:hover {
+  background-color: #287d73;
+}
+
 @media (max-width: 1200px) {
   .hero {
     height: 280px;
