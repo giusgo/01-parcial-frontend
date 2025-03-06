@@ -53,7 +53,281 @@
         <h1 class="mobile">Job Sidebar</h1>
       </div>
     </div>
-    <main></main>
+    <main>
+      <section class="jobs" aria-label="Job Listings">
+        <div class="container">
+          <aside>
+            <div class="search-filters" aria-label="Job search filters">
+              <!-- Search Input -->
+              <div class="search-group">
+                <label for="job-search" class="group-label"
+                  >Search by Job Title</label
+                >
+                <div class="search-input-wrapper">
+                  <input
+                    type="search"
+                    id="job-search"
+                    placeholder="Job title or company"
+                    aria-label="Search jobs"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search search-icon"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="filter-group">
+                <label for="location" class="group-label">Location</label>
+                <div class="select-wrapper">
+                  <select id="location" name="location">
+                    <option value="">Choose city</option>
+                  </select>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path
+                      d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Category -->
+              <fieldset class="filter-group">
+                <legend class="group-label">Category</legend>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="commerce" name="category" />
+                    <label for="commerce"
+                      >Commerce <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="telecommunications"
+                      name="category"
+                    />
+                    <label for="telecommunications"
+                      >Telecommunications <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="hotels-tourism"
+                      name="category"
+                    />
+                    <label for="hotels-tourism"
+                      >Hotels & Tourism <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="education" name="category" />
+                    <label for="education"
+                      >Education <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="financial-services"
+                      name="category"
+                    />
+                    <label for="financial-services"
+                      >Financial Services <span class="count">10</span></label
+                    >
+                  </div>
+                </div>
+
+                <button class="show-more" type="button">Show More</button>
+              </fieldset>
+
+              <!-- Job Type -->
+              <fieldset class="filter-group">
+                <legend class="group-label">Job Type</legend>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="full-time" name="job-type" />
+                    <label for="full-time"
+                      >Full Time <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="part-time" name="job-type" />
+                    <label for="part-time"
+                      >Part Time <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="free-lance" name="job-type" />
+                    <label for="free-lance"
+                      >Freelance <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="seasonal" name="job-type" />
+                    <label for="seasonal"
+                      >Seasonal <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="fixed-price" name="job-type" />
+                    <label for="fixed-price"
+                      >Fixed-price <span class="count">10</span></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Experience Level -->
+              <fieldset class="filter-group">
+                <legend class="group-label">Experience Level</legend>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="no-experience"
+                      name="experience"
+                    />
+                    <label for="no-experience"
+                      >No-experience <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="fresher" name="experience" />
+                    <label for="fresher"
+                      >Fresher <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      id="intermediate"
+                      name="experience"
+                    />
+                    <label for="intermediate"
+                      >Intermediate <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="expert" name="experience" />
+                    <label for="expert"
+                      >Expert <span class="count">10</span></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Date Posted -->
+              <fieldset class="filter-group">
+                <legend class="group-label">Date Posted</legend>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="all" name="date" />
+                    <label for="all">All <span class="count">10</span></label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="last-hour" name="date" />
+                    <label for="last-hour"
+                      >Last Hour <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="last-24-hours" name="date" />
+                    <label for="last-24-hours"
+                      >Last 24 Hours <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="last-7-days" name="date" />
+                    <label for="last-7-days"
+                      >Last 7 Days <span class="count">10</span></label
+                    >
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="last-30-days" name="date" />
+                    <label for="last-30-days"
+                      >Last 30 Days <span class="count">10</span></label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Salary Range -->
+              <div class="filter-group">
+                <label for="salary-range" class="group-label">Salary</label>
+                <div class="salary-slider">
+                  <input
+                    type="range"
+                    id="salary-min"
+                    min="0"
+                    max="99999"
+                    step="1000"
+                    aria-label="Salary range"
+                  />
+                  <input
+                    type="range"
+                    id="salary-max"
+                    min="0"
+                    max="99999"
+                    step="1000"
+                    aria-label="Salary range"
+                  />
+                  <div class="track"></div>
+                  <div class="range"></div>
+                </div>
+                <div class="salary-wrapper">
+                  <div class="salary-value">Salary: $0 - $99999</div>
+                  <button type="button" class="apply-btn">Apply</button>
+                </div>
+              </div>
+
+              <!-- Tags -->
+              <div class="filter-group">
+                <h3>Tags</h3>
+                <div class="tags-container">
+                  <button type="button" class="tag">engineering</button>
+                  <button type="button" class="tag">design</button>
+                  <button type="button" class="tag">ui/ux</button>
+                  <button type="button" class="tag">marketing</button>
+                  <button type="button" class="tag">management</button>
+                  <button type="button" class="tag">soft</button>
+                  <button type="button" class="tag">construction</button>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="jobs-list"></div>
+        </div>
+      </section>
+      <section class="top-companies"></section>
+    </main>
     <footer role="contentinfo">
       <div class="container">
         <div class="relevant">
@@ -89,9 +363,7 @@
           </div>
           <div class="newsletter">
             <h6>Newsletter</h6>
-            <p>
-              Eu nunc pretium vitae platea. Non netus elementum vulputate
-            </p>
+            <p>Eu nunc pretium vitae platea. Non netus elementum vulputate</p>
             <form action="" aria-label="Newsletter Subscription Form">
               <label for="email" class="visually-hidden">Email Address</label>
               <input
@@ -117,5 +389,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/slider.js"></script>
   </body>
 </html>
