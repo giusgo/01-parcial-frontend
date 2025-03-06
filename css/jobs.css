@@ -39,6 +39,30 @@ section.jobs .container aside {
   max-width: 314px;
 }
 
+section.jobs .container aside .filter-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: #309689;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Figtree", serif;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+section.jobs .container aside .filter-btn:hover {
+  background-color: #267a6e;
+}
+
 section.jobs .container .search-filters {
   background-color: #ebf5f4;
   padding: 2rem 1.5rem;
@@ -583,5 +607,87 @@ section.jobs .container .jobs-list .pagination .next-btn:hover {
 
   .hero .title .desktop {
     display: none;
+  }
+  
+  section.jobs {
+    padding: 40px 0;
+  }
+
+  section.jobs .container {
+    max-width: 90%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  section.jobs .container aside {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.jobs .container aside .filter-btn {
+    display: block;
+  }
+
+  section.jobs .container aside .ad {
+    margin-top: 40px;
+    width: 314px;
+    height: 460px;
+  }
+
+  section.jobs .container .jobs-list .results-stats p{
+    font-size: 12px;
+  }
+
+  section.jobs .container .jobs-list .results-stats select {
+    width: 148px;
+    font-size: 16px;
+  }
+
+  section.jobs .jobs-list .job .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.jobs .jobs-list .job .details .location {
+    margin-top: 10px;
+  }
+
+  section.jobs .jobs-list .job .details-2 {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+
+  section.jobs .jobs-list .job .details-2 .more-details {
+    flex-direction: column;
+  }
+
+  section.jobs .jobs-list .job .details-2 a {
+    width: 100%;
+  }
+
+  section.jobs .jobs-list .job .details-2 .job-details-btn {
+    width: 100%;
+  }
+
+  section.jobs .container .jobs-list .pagination .pages .page-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  section.jobs .container .jobs-list .pagination .prev-btn {
+    display: none;
+  }
+
+  section.jobs .container .jobs-list .pagination .next-btn {
+    font-size: 16px;
+    padding: 0 10px;
+    height: 28px;
+    border-radius: 8px;
   }
 }

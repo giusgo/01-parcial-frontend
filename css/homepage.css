@@ -846,6 +846,10 @@ section.blog .posts .post .content .read-more-link {
     flex-direction: column;
   }
 
+  section.jobs .jobs-list .job .details-2 a {
+    width: 100%;
+  }
+
   section.jobs .jobs-list .job .details-2 .job-details-btn {
     width: 100%;
   }
