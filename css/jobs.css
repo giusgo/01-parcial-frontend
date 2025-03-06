@@ -24,11 +24,19 @@
 
 section.jobs {
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 section.jobs .container {
   max-width: 80%;
   margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+section.jobs .container aside {
+  max-width: 314px;
 }
 
 section.jobs .container .search-filters {
@@ -314,6 +322,70 @@ section.jobs .container .search-filters .filter-group .tags-container .tag {
   font-size: 14px;
   cursor: pointer;
   color: #309689;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section.jobs
+  .container
+  .search-filters
+  .filter-group
+  .tags-container
+  .tag:hover {
+  background-color: #309689;
+  color: white;
+}
+
+section.jobs .container .ad {
+  width: 100%;
+  height: 460px;
+  margin-top: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, brightness 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+section.jobs .container .ad:hover {
+  transform: scale(1.05);
+  transform: brightness(0.9);
+}
+
+section.jobs .container .ad .img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #c2c2c2;
+}
+
+section.jobs .container .ad .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px) brightness(0.6);
+}
+
+section.jobs .container .ad .content {
+  position: absolute;
+  z-index: 1;
+  top: 26px;
+  left: 26px;
+}
+
+section.jobs .container .ad .content h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+section.jobs .container .ad .content p {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+section.jobs .container .jobs-list {
+  flex: 1;
 }
 
 /* Responsive design */
