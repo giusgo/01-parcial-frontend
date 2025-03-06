@@ -322,17 +322,59 @@
                 </div>
               </div>
             </div>
-            <div class="ad">
+            <div class="ad" aria-label="Job Advertisement">
               <div class="img-wrapper">
-                <img src="./assets/img/adimg.webp" alt="Ad" />
+                <img
+                  src="./assets/img/adimg.webp"
+                  alt="Job Advertisement Image"
+                  aria-hidden="true"
+                />
               </div>
               <div class="content">
-                <h3>WE ARE HIRING</h3>
-                <p>Apply Today!</p>
+                <h3 aria-label="Job Hiring Announcement">WE ARE HIRING</h3>
+                <p aria-label="Call to Action for Job Application">
+                  Apply Today!
+                </p>
               </div>
             </div>
           </aside>
-          <div class="jobs-list"></div>
+          <div class="jobs-list" aria-label="Job listings">
+            <div class="results-stats">
+              <p aria-label="Results count">Showing 6-6 of 10 results</p>
+              <select name="sort" id="sort" aria-label="Sort jobs">
+                <option value="">Sort by latest</option>
+                <option value="">Sort by oldest</option>
+                <option value="">Sort by salary: low to high</option>
+                <option value="">Sort by salary: high to low</option>
+              </select>
+            </div>
+            <div class="results" aria-label="Job results"></div>
+            <div class="pagination" aria-label="Pagination">
+              <div class="prev-btn" aria-label="Previous page"></div>
+              <div class="pages">
+                <button class="page-btn" aria-label="Page 1">1</button>
+                <button class="page-btn" aria-label="Page 2">2</button>
+              </div>
+              <button class="next-btn" aria-label="Next page">
+                Next
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="top-companies"></section>
