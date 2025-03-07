@@ -114,6 +114,32 @@ section.details .job-info .details-2 .apply-btn:hover {
   background-color: #287d73;
 }
 
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.job-description {
+  font-weight: semibold;
+  flex: 1;
+}
+
+.sidebar {
+  width: 314px; /* Mismo ancho que el botón "Apply Job" */
+  padding: 2rem 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1200px) {
   .hero {
     height: 280px;
