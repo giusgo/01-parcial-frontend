@@ -28,7 +28,7 @@ section.info-block-1 .container {
   flex-direction: column;
   gap: 40px;
   margin: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 section.info-block-1 .content {
@@ -73,7 +73,7 @@ section.how-it-works {
 
 section.how-it-works .container {
   margin: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 section.how-it-works .container > p {
@@ -138,7 +138,7 @@ section.how-it-works .step .icon {
 
 section.video .container {
   margin: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 section.video .container .bg-video-wrapper {
@@ -237,7 +237,7 @@ section.faq {
 
 section.faq .container {
   margin: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 section.faq .container h2 {
@@ -320,7 +320,7 @@ section.info-block-2 .container {
   display: flex;
   gap: 64px;
   margin: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 section.info-block-2 .container .content {
@@ -498,8 +498,16 @@ section.blog .wrapper {
     font-size: 32px;
   }
 
+  section.info-block-1 .container {
+    max-width: 90%;
+  }
+
   section.blog {
     padding: 40px 0;
+  }
+
+  section.blog .container {
+    max-width: 90%;
   }
 
   section.blog h2 {
@@ -526,6 +534,10 @@ section.blog .wrapper {
   section.faq {
     padding-bottom: 40px;
     padding-top: 60px;
+  }
+
+  section.faq .container {
+    max-width: 90%;
   }
 
   section.faq .container h2 {
@@ -599,6 +611,10 @@ section.blog .wrapper {
 
   section.info-block-2 {
     display: none;
+  }
+
+  section.info-block-2 .container {
+    max-width: 90%;
   }
 
   section.video .container {
