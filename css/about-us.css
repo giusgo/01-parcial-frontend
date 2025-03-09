@@ -287,6 +287,10 @@ section.faq .question-open {
   padding: 40px;
 }
 
+section.faq .question-open .question-number {
+    color: #309689;
+}
+
 section.faq .question {
   border-bottom: 2px solid rgba(48, 150, 137, 0.2);
 }
