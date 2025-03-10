@@ -25,8 +25,12 @@ section.details {
 }
 
 section.details .container {
-  max-width: 80%;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200%;
+  margin: 0 auto;
+  padding: 60px 72px;
+  gap: 20px;
 }
 
 section.details .job-info {
@@ -98,16 +102,24 @@ section.details .job-info .details-2 .more-details .item p {
 section.details .job-info .details-2 .apply-btn {
   font-size: 16px;
   font-weight: 600;
-  color: white;
+  color: var(--Default-White, #FFF);
   background-color: #309689;
   border: none;
   border-radius: 8px;
-  width: 314px;
-  padding: 14px 0;
+  width: 301px;
+  height: 50px;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
   font-family: "Figtree", serif;
   transition: 0.3s ease;
   text-align: center;
+  font-style: normal;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 section.details .job-info .details-2 .apply-btn:hover {
@@ -124,20 +136,181 @@ section.details .job-info .details-2 .apply-btn:hover {
   flex: 1;
 }
 
+.job-description h2 {
+  margin-top: 60px; /* Añadir 60px de separación arriba */
+  margin-bottom: 40px; /* Añadir 40px de separación abajo */
+}
+
+.job-description h2 + p {
+  width: 966px;
+  color: #000;
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
 .sidebar {
-  width: 314px; /* Mismo ancho que el botón "Apply Job" */
-  padding: 2rem 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 20px;
   display: flex;
+  width: 306px;
+  padding: 28px 20px 20px 20px;
   flex-direction: column;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 20px;
+  background: #EBF5F4;
 }
 
 .sidebar h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.sidebar-image {
+  display: flex;
+  width: 266px;
+  height: 266px;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px; /* Separación entre cada sub-frame */
+  align-self: stretch;
+}
+
+.frame h3 {
+  align-self: stretch;
+  color: #000;
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sub-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  width: 266px;
+  height: 53px;
+  position: relative;
+}
+
+.sub-frame h3 {
+  margin-left: 40px; /* Añadir margen para el icono */
+}
+
+.sub-frame p {
+  color: var(--Gray-600, #6C757D);
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px; /* Añadir margen para el icono */
+  width: auto;
+  max-width: 149px;
+  height: auto;
+  min-height: 30px;
+}
+
+.sub-frame svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 4px; /* Ajustar según sea necesario */
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.no-bullets li svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.tag {
+  display: flex;
+  height: 40px;
+  padding: 8px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: rgba(48, 150, 137, 0.10);
+  border: none; /* Quitar borde negro */
+  color: #309689;
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tags-container {
+  display: flex;
+  gap: 24px; /* Separación de 24px entre los botones */
+}
+
+.share-job {
+  color: #000;
+  font-family: Figtree;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 60px; /* Añadir 60px de separación arriba */
+  margin-bottom: 60px; /* Añadir 60px de separación abajo */
+  display: flex;
+  align-items: center;
+  gap: 24px; /* Añadir 24px de separación */
+}
+
+.share-job .share-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.related-jobs {
+  color: var(--Default-Black, #000);
+  font-family: Figtree;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 40px; /* Añadir 40px de separación abajo */
+}
+
+.related-jobs-description {
+  color: var(--Default-Black, #000);
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px; /* Añadir 40px de separación abajo */
 }
 
 @media (max-width: 1200px) {
