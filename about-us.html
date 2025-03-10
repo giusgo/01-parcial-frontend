@@ -18,10 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/about-us.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
     <title>About Us - Job Portal</title>
   </head>
+
   <body>
     <div class="hero">
       <header>
@@ -48,9 +49,391 @@
         </div>
       </header>
 
-      <div class="title"><h1>About Us</h1></div>
+      <div class="title">
+        <h1>About Us</h1>
+      </div>
     </div>
-    <main></main>
+    <main>
+      <section class="info-block-1" aria-labelledby="Info 1">
+        <div class="container">
+          <div class="content">
+            <h2 id="info-block-title">Et nunc ut tempus duis nisl sed massa</h2>
+            <p>
+              Nunc sed a nisl purus. Nibh dis faucibus proin lacus tristique.
+              Sit congue non vitae odio sit erat in. Felis eu ultrices a sed
+              massa. Commodo fringilla sed tempor risus laoreet ultricies ipsum.
+              Habitasse morbi faucibus in iaculis lectus. Nisi enim feugiat enim
+              volutpat. Sem quis viverra viverra odio mauris nunc.
+            </p>
+          </div>
+
+          <div class="bg-img-wrapper">
+            <img
+              src="./assets/img/infoblockimg.webp"
+              alt="Illustration of a person searching for job opportunities"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" aria-label="How It Works Section">
+        <div class="container">
+          <h2 aria-label="Section Title">How it works</h2>
+          <p aria-label="Section Description">
+            At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+            Blandit a massa elementum id scelerisque rhoncus.
+          </p>
+          <div class="steps" aria-label="Process Steps">
+            <div class="step" aria-label="Step 1: Create Account">
+              <div class="icon">
+                <img
+                  src="./assets/svg/account.svg"
+                  alt="Account Icon"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="content">
+                <div class="step-title" aria-label="Step Title">
+                  Create Account
+                </div>
+                <p aria-label="Step Description">
+                  Nunc sed a nisl purus. Nibh dis faucibus proin lacus.
+                </p>
+              </div>
+            </div>
+            <div class="step" aria-label="Step 2: Upload Resume">
+              <div class="icon">
+                <img
+                  src="./assets/svg/resume.svg"
+                  alt="Resume Icon"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="content">
+                <div class="step-title" aria-label="Step Title">
+                  Upload Resume
+                </div>
+                <p aria-label="Step Description">
+                  Felis eu ultrices a sed massa. Commodo fringilla sed tempor.
+                </p>
+              </div>
+            </div>
+            <div class="step" aria-label="Step 3: Find Jobs">
+              <div class="icon">
+                <img
+                  src="./assets/svg/job.svg"
+                  alt="Job Search Icon"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="content">
+                <div class="step-title" aria-label="Step Title">Find Jobs</div>
+                <p aria-label="Step Description">
+                  Commodo fringilla sed tempor risus laoreet ultricies ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="step" aria-label="Step 4: Apply for Job">
+              <div class="icon">
+                <img
+                  src="./assets/svg/apply.svg"
+                  alt="Apply Icon"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="content">
+                <div class="step-title" aria-label="Step Title">
+                  Apply for Job
+                </div>
+                <p aria-label="Step Description">
+                  Nisi enim feugiat enim volutpat. Sem quis viverra.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video" aria-labelledby="Video">
+        <div class="container">
+          <div class="bg-video-wrapper">
+            <img
+              src="./assets/img/post-1.webp"
+              alt="Thumbnail of the company introduction video"
+              class="main"
+            />
+            <div
+              class="video-overlay"
+              role="button"
+              aria-label="Play introduction video"
+            >
+              <img src="./assets/svg/play.svg" alt="" aria-hidden="true" />
+              <p>Good Life Begins With A Good Company</p>
+            </div>
+          </div>
+
+          <div class="steps" aria-labelledby="steps-title">
+            <div class="step">
+              <div class="num" aria-hidden="true">1</div>
+              <div class="description">
+                <p>Elit gravida lorem amet porta risus vitae at</p>
+                <a href="#" aria-label="Learn more about step 1">Learn more</a>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="num" aria-hidden="true">2</div>
+              <div class="description">
+                <p>Elit gravida lorem amet porta risus vitae at</p>
+                <a href="#" aria-label="Learn more about step 2">Learn more</a>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="num" aria-hidden="true">3</div>
+              <div class="description">
+                <p>Elit gravida lorem amet porta risus vitae at</p>
+                <a href="#" aria-label="Learn more about step 3">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="Frequently asked questions">
+        <div class="container">
+          <div class="title">
+            <h2>Frequently Asked Questions</h2>
+            <p>At eu lobortis pretium tincidunt amet lacus ut aenean aliquet</p>
+          </div>
+          <div class="questions">
+            <div class="question-open">
+              <div class="content">
+                <span class="question-number" aria-hidden="true">01</span>
+                <div class="question-text">
+                  <span class="question-title">Can I upload a CV?</span>
+                  <span class="question-answer">
+                    Nunc sed a nisl purus. Nibh dis faucibus proin lacus
+                    tristique. Sit congue non vitae odio sit erat in. Felis eu
+                    ultrices a sed massa. Commodo fringilla sed tempor risus
+                    laoreet ultricies ipsum. Habitasse morbi faucibus in iaculis
+                    lectus. Nisi enim feugiat enim volutpat. Sem quis viverra
+                    viverra odio mauris nunc.
+                  </span>
+                </div>
+              </div>
+              <img
+                src="./assets/svg/plus-circle-open.svg"
+                alt="Collapse answer"
+                class="toggle-icon"
+              />
+            </div>
+            <div class="question">
+              <div class="content">
+                <span class="question-number" aria-hidden="true">02</span>
+                <div class="question-text">
+                  <span class="question-title"
+                    >How long will the recruitment process take?</span
+                  >
+                </div>
+              </div>
+              <img
+                src="./assets/svg/plus-circle-close.svg"
+                alt="Expand answer"
+                class="toggle-icon"
+              />
+            </div>
+            <div class="question">
+              <div class="content">
+                <span class="question-number" aria-hidden="true">03</span>
+                <div class="question-text">
+                  <span class="question-title"
+                    >Do you recruit for Graduates, Apprentices and
+                    Students?</span
+                  >
+                </div>
+              </div>
+              <img
+                src="./assets/svg/plus-circle-close.svg"
+                alt="Expand answer"
+                class="toggle-icon"
+              />
+            </div>
+            <div class="question">
+              <div class="content">
+                <span class="question-number" aria-hidden="true">04</span>
+                <div class="question-text">
+                  <span class="question-title"
+                    >What does the recruitment and selection process
+                    involve?</span
+                  >
+                </div>
+              </div>
+              <img
+                src="./assets/svg/plus-circle-close.svg"
+                alt="Expand answer"
+                class="toggle-icon"
+              />
+            </div>
+            <div class="question">
+              <div class="content">
+                <span class="question-number" aria-hidden="true">05</span>
+                <div class="question-text">
+                  <span class="question-title"
+                    >Can I receive notifications for any future jobs that may
+                    interest me?</span
+                  >
+                </div>
+              </div>
+              <img
+                src="./assets/svg/plus-circle-close.svg"
+                alt="Expand answer"
+                class="toggle-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-block-2" aria-labelledby="Info 2">
+        <div class="container">
+          <div class="images-wrapper">
+            <div class="bg-img-wrapper">
+              <img src="./assets/img/post-2.webp" alt="Team collaboration" />
+            </div>
+            <div class="image-column">
+              <div class="bg-img-wrapper">
+                <img
+                  src="./assets/img/post-2.webp"
+                  alt="Professional workspace"
+                />
+              </div>
+              <div class="bg-img-wrapper">
+                <img src="./assets/img/post-2.webp" alt="Creative meeting" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2>We’re Only Working With The Best</h2>
+            <p>
+              Ultricies purus dolor viverra mi laoreet at cursus justo. Ultrices
+              purus diam egestas amet faucibus tempor blandit.
+            </p>
+
+            <div class="logos-grid">
+              <div class="logos-column">
+                <div class="logo-item">
+                  <img
+                    src="./assets/svg/quality-j.svg"
+                    alt="Quality Job logo"
+                  />
+                  <p>Quality Job</p>
+                </div>
+                <div class="logo-item">
+                  <img src="./assets/svg/top-c.svg" alt="Top Companies logo" />
+                  <p>Top Companies</p>
+                </div>
+              </div>
+              <div class="logos-column">
+                <div class="logo-item">
+                  <img
+                    src="./assets/svg/resume-b.svg"
+                    alt="Resume Builder logo"
+                  />
+                  <p>Resume builder</p>
+                </div>
+                <div class="logo-item">
+                  <img src="./assets/svg/top-t.svg" alt="Top Talents logo" />
+                  <p>Top Talents</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog" aria-label="Blog">
+        <div class="container">
+          <h2>News and Blog</h2>
+          <div class="wrapper">
+            <p class="description">
+              Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed
+              tristique in dolor
+            </p>
+          </div>
+          <div class="posts">
+            <div class="post">
+              <div class="img-wrapper">
+                <div class="tag">News</div>
+                <img src="./assets/img/post-1.webp" alt="Post 1" />
+              </div>
+              <div class="content">
+                <p class="date">30 March 2024</p>
+                <h3 class="title">
+                  Revitalizing Workplace Morale: Innovative Tactics for Boosting
+                  Employee Engagement in 2024
+                </h3>
+                <a href="#" class="read-more-link">
+                  <p>Read more</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                    aria-label="Read More"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <div class="img-wrapper">
+                <div class="tag">Blog</div>
+                <img src="./assets/img/post-2.webp" alt="Post 2" />
+              </div>
+              <div class="content">
+                <p class="date">30 March 2024</p>
+                <h3 class="title">
+                  How to avoid the top six most common job interview mistakes
+                </h3>
+                <a href="#" class="read-more-link"
+                  >Read more<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                    aria-label="Read More"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer role="contentinfo">
       <div class="container">
         <div class="relevant">
@@ -86,9 +469,7 @@
           </div>
           <div class="newsletter">
             <h6>Newsletter</h6>
-            <p>
-              Eu nunc pretium vitae platea. Non netus elementum vulputate
-            </p>
+            <p>Eu nunc pretium vitae platea. Non netus elementum vulputate</p>
             <form action="" aria-label="Newsletter Subscription Form">
               <label for="email" class="visually-hidden">Email Address</label>
               <input

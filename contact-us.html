@@ -23,9 +23,9 @@
     <title>Contact Us - Job Portal</title>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" role="banner">
       <header>
-        <a class="logo" role="banner" href="./index.html" aria-label="Homepage">
+        <a class="logo" role="img" href="./index.html" aria-label="Homepage">
           <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
           <p class="desktop">Job Portal</p>
           <p class="mobile">Job</p>
@@ -49,54 +49,193 @@
       </header>
       <div class="title"><h1>Contact Us</h1></div>
     </div>
-    <main>
-      <section class="contact-info">
+
+    <main role="main">
+      <section class="info" aria-labelledby="contact-info">
         <div class="container">
-          <div class="info-left">
-            <h2>You Will Grow, You Will Succeed. We Promise That</h2>
+          <div class="information">
+            <h2 id="contact-info">
+              You Will Grow, You Will Succeed. We Promise That
+            </h2>
             <p>
-              Pellentesque non felis orci nec porta non. Dignissim mattis in
-              tristique sit dolor sit. Donec sit bibendum scelerisque adipiscing.
+              Pellentesque arcu facilisis nunc mi proin. Dignissim mattis in
+              lectus tincidunt tincidunt ultrices. Diam convallis morbi
+              pellentesque adipiscing
             </p>
-            <div class="contact-details">
-              <div class="detail">
-                <h3>Call for inquiry</h3>
-                <p>+357 98-6895</p>
+            <div class="items">
+              <div class="item" role="article">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                  />
+                </svg>
+                <p class="title">Call for inquiry</p>
+                <p class="value">+257 388-6895</p>
               </div>
-              <div class="detail">
-                <h3>Send us email</h3>
-                <p>kerimulus@kickglobal.net</p>
+              <div class="item" role="article">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                  />
+                  <path d="M3 7l9 6l9 -6" />
+                </svg>
+                <p class="title">Send us email</p>
+                <p class="value">kramulous@sbcglobal.net</p>
               </div>
-              <div class="detail">
-                <h3>Opening hours</h3>
-                <p>Mon - Fri: 10AM - 10PM</p>
+              <div class="item" role="article">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-clock"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+                <p class="title">Opening hours</p>
+                <p class="value">Mon - Fri: 10AM - 10PM</p>
               </div>
-              <div class="detail">
-                <h3>Office</h3>
-                <p>19 North Road Piscataway, NY 08854</p>
+              <div class="item" role="article">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path
+                    d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                  />
+                </svg>
+                <p class="title">Office</p>
+                <p class="value">19 North Road Piscataway, NY 08854</p>
               </div>
             </div>
           </div>
-          <div class="info-right">
-            <h2>Contact Info</h2>
+          <div class="contact" aria-labelledby="contact-form">
+            <h3 id="contact-form">Contact Info</h3>
+            <p>Nibh dis faucibus proin lacus tristique</p>
             <form action="" aria-label="Contact Form">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" required />
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" required />
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required />
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-              <button type="submit">Send Message</button>
+              <div class="wrapper">
+                <div class="form-group">
+                  <label for="first-name" class="visually-hidden"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name" class="visually-hidden"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Your last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="visually-hidden">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your E-mail address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="visually-hidden">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="send-message-btn"
+                aria-label="Send your message"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </div>
       </section>
-      <section class="map">
-        <img src="./assets/img/Frame675679952.png" alt="Map" />
+      <section class="map" aria-labelledby="map-title">
+        <div class="container">
+          <iframe
+            width="600"
+            height="450"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-122.09,37.42,-122.07,37.43&amp;layer=mapnik&amp;marker=37.42199,-122.084"
+            title="Map showing the location"
+            aria-label="Map showing the location"
+          >
+          </iframe>
+        </div>
       </section>
+      <div class="logos" role="group" aria-label="Company logos">
+        <div class="container">
+          <img src="./assets/svg/logos/zoom.svg" alt="Zoom logo" />
+          <img src="./assets/svg/logos/tinder.svg" alt="Tinder logo" />
+          <img src="./assets/svg/logos/dribbble.svg" alt="Dribbble logo" />
+          <img src="./assets/svg/logos/asana-alt.svg" alt="Asana logo" />
+        </div>
+      </div>
     </main>
+
     <footer role="contentinfo">
       <div class="container">
         <div class="relevant">
@@ -132,20 +271,22 @@
           </div>
           <div class="newsletter">
             <h6>Newsletter</h6>
-            <p>
-              Eu nunc pretium vitae platea. Non netus elementum vulputate
-            </p>
+            <p>Eu nunc pretium vitae platea. Non netus elementum vulputate</p>
             <form action="" aria-label="Newsletter Subscription Form">
-              <label for="email" class="visually-hidden">Email Address</label>
+              <label for="newsletter-email" class="visually-hidden"
+                >Email Address</label
+              >
               <input
                 type="email"
                 name="email"
-                id="email"
+                id="newsletter-email"
                 placeholder="Email Address"
                 required
                 aria-required="true"
               />
-              <button type="submit">Subscribe now</button>
+              <button type="submit" aria-label="Subscribe to newsletter">
+                Subscribe now
+              </button>
             </form>
           </div>
         </div>

@@ -126,191 +126,386 @@ section.details .job-info .details-2 .apply-btn:hover {
   background-color: #287d73;
 }
 
-.content-wrapper {
+section.details .content {
+  width: 100%;
   display: flex;
   gap: 20px;
 }
 
-.job-description {
-  font-weight: semibold;
+section.details .content .main-content {
   flex: 1;
 }
 
-.job-description h2 {
-  margin-top: 60px; /* Añadir 60px de separación arriba */
-  margin-bottom: 40px; /* Añadir 40px de separación abajo */
+section.details .content .main-content section {
+  margin-top: 60px;
+  width: 100%;
 }
 
-.job-description h2 + p {
-  width: 966px;
-  color: #000;
-  font-family: Figtree;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-
-.sidebar {
-  display: flex;
-  width: 306px;
-  padding: 28px 20px 20px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  border-radius: 20px;
-  background: #EBF5F4;
-}
-
-.sidebar h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.sidebar-image {
-  display: flex;
-  width: 266px;
-  height: 266px;
-  padding: 10px 0px;
-  align-items: center;
-  gap: 10px;
-}
-
-.frame {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px; /* Separación entre cada sub-frame */
-  align-self: stretch;
-}
-
-.frame h3 {
-  align-self: stretch;
-  color: #000;
-  font-family: Figtree;
-  font-size: 16px;
-  font-style: normal;
+section.details .content .main-content section h3 {
+  font-size: 24px;
   font-weight: 600;
-  line-height: normal;
+  margin-bottom: 30px;
 }
 
-.sub-frame {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  flex: 1 0 0;
-  width: 266px;
-  height: 53px;
-  position: relative;
-}
-
-.sub-frame h3 {
-  margin-left: 40px; /* Añadir margen para el icono */
-}
-
-.sub-frame p {
-  color: var(--Gray-600, #6C757D);
-  font-family: Figtree;
+section.details .content .main-content .description p {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 40px; /* Añadir margen para el icono */
-  width: auto;
-  max-width: 149px;
-  height: auto;
-  min-height: 30px;
+  line-height: 24px;
 }
 
-.sub-frame svg {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 4px; /* Ajustar según sea necesario */
+section.details .content .main-content .key-responsibilities ul,
+section.details .content .main-content .professional-skills ul {
+  list-style: none;
 }
 
-.no-bullets {
-  list-style-type: none;
-  padding: 0;
-}
-
-.no-bullets li {
+section.details .content .main-content .key-responsibilities ul li,
+section.details .content .main-content .professional-skills ul li {
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.no-bullets li svg {
+section.details .content .main-content .key-responsibilities ul li svg,
+section.details .content .main-content .professional-skills ul li svg {
+  color: #309689;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.tag {
+section.details .content .main-content .tags .tags-container {
   display: flex;
-  height: 40px;
-  padding: 8px 12px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+section.details .content .main-content .tags .tags-container .tag {
+  background-color: rgba(48, 150, 137, 0.1);
+  padding: 10px;
   border-radius: 12px;
-  background: rgba(48, 150, 137, 0.10);
-  border: none; /* Quitar borde negro */
+}
+
+section.details .content .main-content .tags .tags-container .tag p {
   color: #309689;
-  font-family: Figtree;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
-.tags-container {
+section.details .content .main-content .share {
+  margin-top: 60px;
   display: flex;
-  gap: 24px; /* Separación de 24px entre los botones */
+  gap: 20px;
 }
 
-.share-job {
-  color: #000;
-  font-family: Figtree;
+section.details .content .main-content .share p {
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  margin-top: 60px; /* Añadir 60px de separación arriba */
-  margin-bottom: 60px; /* Añadir 60px de separación abajo */
-  display: flex;
-  align-items: center;
-  gap: 24px; /* Añadir 24px de separación */
 }
 
-.share-job .share-icon {
-  width: 24px;
-  height: 24px;
+section.details .content .main-content .related-jobs {
+  margin-top: 120px;
 }
 
-.related-jobs {
-  color: var(--Default-Black, #000);
-  font-family: Figtree;
+section.details .content .main-content .related-jobs h3 {
   font-size: 50px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 40px; /* Añadir 40px de separación abajo */
 }
 
-.related-jobs-description {
-  color: var(--Default-Black, #000);
-  font-family: Figtree;
+section.details .content .main-content .related-jobs p {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 40px; /* Añadir 40px de separación abajo */
+}
+
+section.details .content .main-content .related-jobs .jobs-list {
+  width: 100%;
+  margin-top: 50px;
+}
+
+section.details .content .main-content .related-jobs .jobs-list .job {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(48, 150, 137, 0.08);
+  padding: 40px;
+}
+
+section.details .content .main-content .related-jobs .jobs-list .job .save-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+section.details .content .main-content .related-jobs .jobs-list .job .time {
+  user-select: none;
+  background-color: rgba(48, 150, 137, 0.1);
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  color: #309689;
+  font-size: 16px;
+}
+
+section.details .content .main-content .related-jobs .jobs-list .job .details {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details
+  .position {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details
+  .location {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .more-details {
+  display: flex;
+  gap: 20px;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .more-details
+  .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .more-details
+  .item
+  svg {
+  color: #309689;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .more-details
+  .item
+  p {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .job-details-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #309689;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-family: "Figtree", serif;
+  transition: 0.3s ease;
+}
+
+section.details
+  .content
+  .main-content
+  .related-jobs
+  .jobs-list
+  .job
+  .details-2
+  .job-details-btn:hover {
+  background-color: #1b5850;
+}
+
+section.details .content aside {
+  margin-top: 60px;
+  max-width: 314px;
+}
+
+section.details .content aside .overview {
+  width: 100%;
+  background-color: #ebf5f4;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+section.details .content aside .overview > p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section.details .content aside .overview .item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+section.details .content aside .overview .item svg {
+  color: #309689;
+}
+
+section.details .content aside .overview .item .item-content .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+section.details .content aside .overview .item .item-content .value {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+section.details .content aside .overview iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 1px solid gray;
+}
+
+section.details .content aside .message {
+  width: 100%;
+  background-color: #ebf5f4;
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+section.details .content aside .message > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section.details .content aside .message form {
+  margin-top: 20px;
+}
+
+section.details .content aside .message form label {
+  display: none;
+}
+
+section.details .content aside .message form .input-with-icon {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section.details .content aside .message form .input-with-icon svg {
+  position: absolute;
+  color: #6c757d;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+section.details .content aside .message form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: "Figtree", serif;
+  background-color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  padding-left: 40px;
+  outline: none;
+}
+
+section.details .content aside .message form .message-form-group {
+  height: 160px;
+}
+
+section.details .content aside .message form .message-form-group .input-with-icon {
+  height: 100%;
+}
+
+section.details .content aside .message form .message-form-group .input-with-icon svg {
+  top: 12%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+section.details .content aside .message form textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: "Figtree", serif;
+  background-color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 10px 40px;
+  outline: none;
+  resize: none;
+}
+
+section.details .content aside .message form button {
+  width: 145px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #309689;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -322,4 +517,3 @@ section.details .job-info .details-2 .apply-btn:hover {
     font-size: 32px;
   }
 }
-
