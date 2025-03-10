@@ -156,6 +156,9 @@ section.details .content .main-content .professional-skills ul li {
 section.details .content .main-content .key-responsibilities ul li svg,
 section.details .content .main-content .professional-skills ul li svg {
   color: #309689;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 section.details .content .main-content .tags .tags-container {
@@ -501,4 +504,98 @@ section.details .content aside .message form button {
   .hero .title h1 {
     font-size: 32px;
   }
+
+  section.details {
+    padding: 40px 0;
+  }
+
+  section.details .container {
+    max-width: 90%;
+  }
+
+  section.details .job-info {
+    padding: 40px;
+    box-shadow: 0 3px 8px rgba(48, 150, 137, 0.08);
+    border-radius: 20px;
+  }
+
+  section.details .job-info .save-btn {
+    top: 40px;
+    right: 40px;
+  }
+
+  section.details .job-info .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.details .job-info .details .location {
+    margin-top: 10px;
+  }
+
+  section.details .job-info .details-2 {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+
+  section.details .job-info .details-2 .more-details {
+    flex-direction: column;
+  }
+
+  section.details .job-info .details-2 a {
+    width: 100%;
+  }
+
+  section.details .job-info .details-2 .apply-btn {
+    width: 100%;
+  }
+
+  section.details .content {
+    flex-direction: column-reverse;
+  }
+
+  section.details .content aside {
+    margin-top: 120px;
+    width: 100%;
+    max-width: none;
+  }
+  
+  section.details .content .main-content .related-jobs h3 {
+    font-size: 28px;
+  }
+  
+  section.details .content .main-content .related-jobs p {
+    font-size: 16px;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details .location {
+    margin-top: 10px;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details-2 {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details-2 .more-details {
+    flex-direction: column;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details-2 a {
+    width: 100%;
+  }
+
+  section.details .content .main-content .related-jobs .jobs-list .job .details-2 .job-details-btn {
+    width: 100%;
+  }
+  
 }
