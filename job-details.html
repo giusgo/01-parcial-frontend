@@ -23,26 +23,34 @@
     <title>Job Details - Job Portal</title>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" role="banner">
       <header>
-        <a class="logo" role="banner" href="./index.html" aria-label="Homepage">
+        <a class="logo" role="link" href="./index.html" aria-label="Homepage">
           <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
           <p class="desktop">Job Portal</p>
           <p class="mobile">Job</p>
         </a>
         <nav aria-label="Main Navigation">
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./jobs.html" class="active">Jobs</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./index.html" role="link">Home</a></li>
+            <li><a href="./jobs.html" class="active" role="link">Jobs</a></li>
+            <li><a href="./about-us.html" role="link">About Us</a></li>
+            <li><a href="./contact-us.html" role="link">Contact Us</a></li>
           </ul>
         </nav>
         <div>
-          <button class="login-btn" aria-label="Login to your account">
+          <button
+            class="login-btn"
+            aria-label="Login to your account"
+            role="button"
+          >
             Login
           </button>
-          <button class="register-btn" aria-label="Create a new account">
+          <button
+            class="register-btn"
+            aria-label="Create a new account"
+            role="button"
+          >
             Register
           </button>
         </div>
@@ -50,8 +58,8 @@
 
       <div class="title"><h1>Job Details</h1></div>
     </div>
-    <main>
-      <section class="details">
+    <main role="main">
+      <section class="details" aria-labelledby="job-details">
         <div class="container">
           <div class="job-info" role="article" aria-label="Job Information">
             <div class="save-btn" role="button" aria-label="Save job">
@@ -77,7 +85,7 @@
               10 min ago
             </div>
             <div class="details">
-              <div class="business-icon">
+              <div class="business-icon" aria-label="Company logo">
                 <img
                   src="./assets/svg/business-icons/business-icon-4.svg"
                   alt="Company logo for Leffler and Sons"
@@ -183,6 +191,7 @@
                 <button
                   class="apply-btn"
                   aria-label="Apply for Corporate Solutions Executive"
+                  role="button"
                 >
                   Apply Job
                 </button></a
@@ -191,8 +200,8 @@
           </div>
           <div class="content">
             <div class="main-content">
-              <section class="description">
-                <h3>Job Description</h3>
+              <section class="description" aria-labelledby="job-description">
+                <h3 id="job-description">Job Description</h3>
                 <p>
                   Nunc sed a nisl purus. Nibh dis faucibus proin lacus
                   tristique. Sit congue non vitae odio sit erat in. Felis eu
@@ -213,8 +222,11 @@
                 </p>
               </section>
 
-              <section class="key-responsibilities">
-                <h3>Key Responsibilities</h3>
+              <section
+                class="key-responsibilities"
+                aria-labelledby="key-responsibilities"
+              >
+                <h3 id="key-responsibilities">Key Responsibilities</h3>
                 <ul>
                   <li>
                     <svg
@@ -350,8 +362,11 @@
                 </ul>
               </section>
 
-              <section class="professional-skills">
-                <h3>Professional Skills</h3>
+              <section
+                class="professional-skills"
+                aria-labelledby="professional-skills"
+              >
+                <h3 id="professional-skills">Professional Skills</h3>
                 <ul>
                   <li>
                     <svg
@@ -458,8 +473,8 @@
                 </ul>
               </section>
 
-              <section class="tags">
-                <h3>Tags:</h3>
+              <section class="tags" aria-labelledby="tags">
+                <h3 id="tags">Tags:</h3>
 
                 <div class="tags-container">
                   <div class="tag">
@@ -480,21 +495,27 @@
                 </div>
               </section>
 
-              <div class="share">
-                <p>Share Job:</p>
+              <div class="share" aria-labelledby="share-job">
+                <p id="share-job">Share Job:</p>
                 <a href="#">
-                  <img src="./assets/svg/social/facebook.svg" alt="Facebook" />
+                  <img
+                    src="./assets/svg/social/facebook.svg"
+                    alt="Share on Facebook"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./assets/svg/social/x.svg" alt="Twitter" />
+                  <img src="./assets/svg/social/x.svg" alt="Share on Twitter" />
                 </a>
                 <a href="#">
-                  <img src="./assets/svg/social/linkedin.svg" alt="LinkedIn" />
+                  <img
+                    src="./assets/svg/social/linkedin.svg"
+                    alt="Share on LinkedIn"
+                  />
                 </a>
               </div>
 
-              <section class="related-jobs">
-                <h3>Related Jobs</h3>
+              <section class="related-jobs" aria-labelledby="related-jobs">
+                <h3 id="related-jobs">Related Jobs</h3>
                 <p>
                   At eu lobortis pretium tincidunt amet lacus ut aenean aliquet
                 </p>
@@ -636,6 +657,7 @@
                         <button
                           class="job-details-btn"
                           aria-label="View job details for Internal Integration Planner"
+                          role="button"
                         >
                           Job Details
                         </button></a
@@ -779,6 +801,7 @@
                         <button
                           class="job-details-btn"
                           aria-label="View job details for District Intranet Director"
+                          role="button"
                         >
                           Job Details
                         </button></a
@@ -922,6 +945,7 @@
                         <button
                           class="job-details-btn"
                           aria-label="View job details for Corporate Tactics Facilitator"
+                          role="button"
                         >
                           Job Details
                         </button></a
@@ -932,8 +956,8 @@
               </section>
             </div>
             <aside>
-              <div class="overview">
-                <p>Job Overview</p>
+              <div class="overview" aria-labelledby="job-overview">
+                <p id="job-overview">Job Overview</p>
                 <div class="item">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1113,8 +1137,8 @@
                 >
                 </iframe>
               </div>
-              <div class="message">
-                <p>Send Us Message</p>
+              <div class="message" aria-labelledby="send-message">
+                <p id="send-message">Send Us Message</p>
                 <form action="">
                   <div class="form-group">
                     <label for="full-name">Full Name</label>
